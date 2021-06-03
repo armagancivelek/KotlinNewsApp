@@ -13,12 +13,15 @@ import com.androiddevs.mvvmnewsapp.adapters.NewsAdapter
 import com.androiddevs.mvvmnewsapp.ui.NewActivity
 import com.androiddevs.mvvmnewsapp.ui.NewsViewModel
 import com.google.android.material.snackbar.Snackbar
+import com.huawei.hms.ads.AdParam
+import com.huawei.hms.ads.HwAds
+import com.huawei.hms.ads.banner.BannerView
 import kotlinx.android.synthetic.main.fragment_saved_news.*
 import kotlinx.android.synthetic.main.fragment_search_news.*
 
 class SavedNewsFragment: Fragment(R.layout.fragment_saved_news) {
        lateinit var viewModel:NewsViewModel
-    private val TAG="ABC"
+
     lateinit var  newsAdapter:NewsAdapter
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
